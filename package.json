@@ -1,0 +1,17 @@
+{
+  "name": "airtable-viewer",
+  "version": "1.0.0",
+  "description": "Airtable serverless function with automatic pagination",
+  "type": "module",
+  "main": "api/airtable.js",
+  "scripts": {
+    "test": "node test-serverless.js"
+  },
+  "keywords": ["airtable", "serverless", "vercel"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
+
