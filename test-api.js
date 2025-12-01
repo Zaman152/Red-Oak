@@ -1,6 +1,6 @@
 // Quick test script to verify Airtable API connection
-require('dotenv').config();
-const fetch = require('node-fetch');
+import dotenv from 'dotenv';
+dotenv.config();
 
 const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID;
 const AIRTABLE_TABLE_ID = process.env.AIRTABLE_TABLE_ID || 'tblDrUWfwkwMQM9yR';

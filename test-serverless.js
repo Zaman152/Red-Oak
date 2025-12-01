@@ -3,7 +3,8 @@
  * This simulates a serverless environment and runs the function
  */
 
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 // Mock request and response objects for local testing
 const mockReq = {
@@ -108,7 +109,6 @@ async function runServerlessFunction() {
   // Fetch a page
   async function fetchPage(offset = null) {
     const url = buildAirtableURL(offset);
-    const fetch = require('node-fetch');
     
     const response = await fetch(url, {
       method: 'GET',
